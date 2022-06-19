@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+   
+  }
+
+  main{
+    width: 100vw;
+    height: 100%;
+  }
+  
+   main > img{
+     width: 100vw;
+     box-shadow: 0px 3px 21px -5px rgba(0, 0, 0, 0.75);
+     margin-top: 130px;
+     
+   }
+
+   .corpo{
+     display: flex;
+     font-family: Nunito, sans-serif;
+
+   }
+    
+   
+  
+  /* aqui esta area de pesquisas */
+  .caixa1{
+    z-index: 1;
+    width:30%;
+   height: 1200px;
+    background: #f1f1f1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    fill: solid #FFFFFF;
+    border: #f1f1f1;
+  
+  }
+  .pesquisa{
+   
+    margin-top: 100px;
+  }
+  .pesquisa span{
+    display: block;
+    text-align: center;
+    margin: 40px;
+    border: #777777 solid;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;  
+    color: orange
+  }
+  .pesquisa a{
+    text-decoration: none;
+    color: #777777;
+    text-align: center;
+    display: block;
+    margin-top: 25px;
+  
+  }
+  
+  .pesquisa > a:hover{
+    color: orange;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  /* aqui esta area da serviços */
+.caixa2{
+  width: 76%;
+}
+  .caixa2 h1{
+    width: 100%;
+    position: relative;
+    top: 100px;
+    left: 50px;
+    color: orange;
+  }
+  .carrosel{
+  width: 110%;
+  height: 500px;
+  display: flex;
+  margin-top: 200px;
+ box-shadow: 10px 10px 15px #777777; 
+}
+.carrosel ul{
+  display: flex;
+  list-style: none;
+  overflow:hidden;
+}
+
+.carrosel li{
+  position: relative;
+  width: 600px;
+height: 500px;
+
+  
+  
+
+  animation: slide  25s infinite ease-out;
+}
+.carrosel img{
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+
+ }
+
+@keyframes slide{
+  0%{ left: 0px;}
+  20%{left: 0px;}
+  40%{left: -1200px}
+  50%{left: -1200px;}
+  60%{left:-1800px;}
+  70%{left: -1800px;}
+  80%{left: -1200px;}
+  90%{left: -1200px;}
+ 
+100%{left: 0px}
+
+/* SERVIÇOS */
+}
+.caixa2 button{
+  border-bottom-style: #bd680f solid;
+  border-radius: 5px;
+  background: #c96f10;
+  position: absolute;
+  font-size: 16px;
+  cursor: pointer;
+  color:#f1f1f1 ;
+  margin: 15px;
+width: 120px;
+height: 45px;
+  top: 420px;
+left: 20px;
+}
+.caixa2 button:hover{
+  background-color: #bd680f;
+}
+.item h2{
+  position: absolute;
+  top: 260px;
+left: 15px;
+text-align: center;
+}
+.item p {
+   position: absolute;
+   text-align: start;
+   width: 530px;
+   top: 320px;
+   left: 10px;
+   color: #777777;
+}
+
+/* aqui esta os produtos */
+  .produtos{
+    display: flex;
+  width: 100px;
+  height: 50px;
+  border: #777777 solid;
+
+   
+  }
+  .produtos h1{
+    position: absolute;
+    right: 100px;
+    left: 50%;
+    margin-top: 60%;
+    font-size: 34px;
+    color: orange;
+  }
+  .infomação_produto{
+    display: flex;
+    position: absolute;
+    right: 100px;
+    left: 23%;
+    margin-top:  68%;
+  
+}
+  .infomação_produto > a {
+  text-decoration: none;
+  color: #777777;
+  text-align: center;
+  border: #777777 solid 2px;
+  margin-right: 35px;
+}
+.produtos img{
+    display: flex;
+    width: 200px;}
+  
+.infomação_produto p:hover{
+    color: orange;
+    cursor: pointer;
+  }
+  
